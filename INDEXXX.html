@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d3635e507.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Passionate WebDeveloper</p>
+                <h1>Hi,I am <span>Sagarika Pal</span><br>from NITA</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="developer.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Sagarika Pal, a passionate and resilient under graduate student pursuing Electronics & Communication engineering from NIT Agartala.  keen about problem solving using ds/ algo ,Web development, Machine-learning .</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Building Web apps</li>
+                            <li><span>Programming</span><br>Programs code to smoothly run computer applications </li>
+                            <li><span>Machine-learning</span><br>Building Machine-learning models</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Made Portfolio website & Spotify clone using HTML,CSS,JavaScript,React.</li>
+                            <li><span>Programming</span><br>Made Analysis Project using Python(Pandas,Numpy,seaborn,Matplot.lib).</li>
+                            <li><span>Machine-learning</span><br>Build an House priceprecdiction model using Python(Pandas,Numpy,seaborn,Matplot.lib),jupiter-notebook (Using Linear Regression). </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017-2018</span><br>AISSE Education</li>
+                            <li><span>2019-2020</span><br>AISSCE Education</li>
+                            <li><span>2021-2025</span><br>BTech(NITA)</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Front-end Developer.Done multiple Front-end projects.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Programming</h2>
+                    <p>Done multiple analysis project using python.</p>
+                    <a href="#">Learn more</a>
+    
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine-learning</h2>
+                    <p>Made multiple Machine-learning models and deployed them using Python.</p>
+                    <a href="#">Learn more</a>
+    
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                     <img src="s.png" alt="">
+                     <div class="layer">
+                        <h3>spotify clone</h3>
+                        
+                        <p>It is a spotify clone with the help of HTML,CSS,JavaScript,React.
+                        </p>
+                     </div>
+                </div>
+                
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1>
+                                <p><a href="pal.sagarika2001@gmail.com"><i class="fas fa-paper-plane"></i></a>
+                                    Email</p>
+                                <p><i class="fas fa-phone-square-alt"></i>
+                                     8413060317</p>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/sagarika-pal-a4259225a/"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/Riyaa26aa"><i class="fa-brands fa-github"></i></a>
+                               
+                                </div>
+                                    <a href="resume.pdf" download="" class="btn btn2">Download CV</a>
+                
+                            </div>
+                            <div class="contact-right">
+                                <form  name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                                    <button type="submit" class="btn btn2">Submit</button>
+                                </form>
+                                <span id="msg"></span>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>copyrights &#169; sagarikasportfolio.com |  All rights reserved</p>
+                    </div>
+                </div>
